@@ -18184,21 +18184,6 @@ var HammerComponent = React.createClass({
 		if (this.hammer) {
 			updateHammer(this.hammer, this.props);
 		}
-
-		if (this.props.action)          this.hammer.on('tap press', this.props.action);
-		if (this.props.onTap)           this.hammer.on('tap', this.props.onTap);
-		if (this.props.onDoubleTap)     this.hammer.on('doubletap', this.props.onDoubleTap);
-
-		if (this.props.onPan)           this.hammer.on('pan', this.props.onPan);
-		if (this.props.onPanStart)      this.hammer.on('panstart', this.props.onPanStart);
-		if (this.props.onPanMove)       this.hammer.on('panmove', this.props.onPanMove);
-		if (this.props.onPanEnd)        this.hammer.on('panend', this.props.onPanEnd);
-		if (this.props.onPanCancel)     this.hammer.on('pancancel', this.props.onPanCancel);
-
-		if (this.props.onSwipe)         this.hammer.on('swipe', this.props.onSwipe);
-		if (this.props.onPress)         this.hammer.on('press', this.props.onPress);
-		if (this.props.onPinch)         this.hammer.on('pinch', this.props.onPinch);
-		if (this.props.onRotate)        this.hammer.on('rotate', this.props.onRotate);
 	},
 
 	componentWillUnmount: function () {
